@@ -6,12 +6,12 @@ const menu=()=>{
     if(openMenu===0){
         showMenu=+1
         openMenu=1;
-        document.querySelector('#change').setAttribute('src', 'src/pictures/menu-burger-open.jpg');
+        document.querySelector('#change').setAttribute('src', 'src/pictures/menu-burger-close.png');
         document.querySelector('#change').setAttribute('alt', 'Fermeture du menu');
     }else{
         showMenu=-1
         openMenu=0;
-        document.querySelector('#change').setAttribute('src', 'src/pictures/menu-burger-close.jpg');
+        document.querySelector('#change').setAttribute('src', 'src/pictures/menu-burger-open.png');
         document.querySelector('#change').setAttribute('alt', 'Ouverture du menu');
     }
 
