@@ -34,13 +34,15 @@ body{
 	height: 2.5rem;
 	background: var(--dark-color);
 	width: calc(100vw - .6rem);
+	z-index: 1;
 }
 
 .navbar>ul{
 	display: flex;
-	gap: .5rem;
+	gap: 1rem;
 	align-items: center;
 	list-style: none;
+	margin-right: .5rem;
 }
 
 .navbar>ul li{
@@ -54,6 +56,7 @@ font-size: .7rem;
 	.show{
 		display: block;
 		cursor: pointer;
+		margin-left: .5rem;
 	}
 
 	.hidden{
@@ -62,6 +65,7 @@ font-size: .7rem;
 
 	.menu{
 		margin-left: -15.625rem;
+		z-index: 1;
 	}
 	
 	main,
@@ -81,10 +85,11 @@ font-size: .7rem;
 
 	.menu{
 		margin-left: 0;
-	}
+		}
 	
-	main,
-	h1{
+	h1,
+	header>p,
+	main{
 		margin-left: 15.625rem;
 		width:calc(100vw - 16.725rem);
 	}
@@ -95,12 +100,11 @@ font-size: .7rem;
 	top: 2.5rem;
 	background: var(--medium-color);
 	width: 15.625rem;
-	min-height:15.625rem;
 	border-radius: 0 0 .5rem 0;
 	padding-top: .5rem;
 	overflow-y: scroll;
-	max-height: calc(100vh - 2.5rem);
-}
+	max-height: calc(100vh - 5.5rem);
+	}
 
 .menu>ul>li{
 	margin-bottom: 1rem;
@@ -116,15 +120,16 @@ font-size: .7rem;
 	font-weight: bold;
 }
 
-h1{
-	margin-top: 3rem;
+.center{
 	text-align: center;
 }
 
-/* main{
-	padding-left: .5rem;
-} */
+h1{
+	margin-top: 3rem;
 
+}
+
+header>p,
 section{
 	padding-left: 1rem;
 }
@@ -140,8 +145,11 @@ aside{
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 1rem;
-	overflow: hidden;
-	height: 20.8125rem;
+	}
+
+	.home{
+		overflow: hidden;
+		height: 20.8125rem;
 	}
 
 figure{
