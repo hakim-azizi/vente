@@ -5,17 +5,18 @@
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<title>Document</title>
 		<link href='src/style/style.css' rel='stylesheet'>
+		<link href='src/style/form.css' rel='stylesheet'>
 	</head>
 	<body>
 		<header class='navbar'>
 			<picture onclick='menu()' class='open-menu show'><img id='change' src='src/pictures/menu-burger-open.png' alt='Ouverture du menu' title='menu'></picture>
 			<a href='./'><picture class='hidden'><img src='src/pictures/logo.jpg' alt='lien vers l&apos;Accueil' title='accueil'></picture></a>
-			<ul>
-				<li style='width: 1.8125rem;' class='show'><img src='src/pictures/home.png' alt='aller sur la page d&apos;accueil' title='Page d&apos;accueil'></li>
-				<li style='width: 1.8125rem;'><img src='src/pictures/account.png' alt='Se connecter' title='Connexion'></li>
-				<li style='width: 1.8125rem;'><a href='contact.html'><img src='src/pictures/contact.png' alt='Nous contacter' title='Contact'></a></li>
-				<li style='width: 1.8125rem;'><img src='src/pictures/cart.png' alt='Ouvrir le panier' title='panier'></li>
-			</ul>
+		<ul>
+			<li style='width: 1.8125rem;' class='show'><img src='src/pictures/home.png' alt='aller sur la page d&apos;accueil' title='Page d&apos;accueil'></li>
+			<li style='width: 1.8125rem;'><img src='src/pictures/account.png' alt='Se connecter' title='Connexion'></li>
+			<li style='width: 1.8125rem;'><a href='contact.html'><img src='src/pictures/contact.png' alt='Nous contacter' title='Contact'></a></li>
+			<li style='width: 1.8125rem;'><img src='src/pictures/cart.png' alt='Ouvrir le panier' title='panier'></li>
+		</ul>
 		</header>
 		<header class='menu'>
 			<ul>
@@ -59,23 +60,24 @@
 			</ul>
 		</header>
 		<header>
-			<h1  class='center'>Nom de l'article</h1>
+			<h1 class='center'>Connexion</h1>
 		</header>
 		<main>
 			<section>
-				<h2>sous-titre</h2>
-				<p>Voici une présentation de quelques articles</p>
-				<aside style='float: left;margin-right: .5rem;width: 35%;min-width: 15.625rem; height:auto'>
-					<figure style='width: 100%;'><figcaption>Nom de l'article<br><span class='red-color'>10 &euro;</span></figcaption><img src='src/photo/photo-article.jpg' alt='' style='width: 100%;height: auto'></figure>
-				</aside>
-				<article>
-					<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nisi explicabo dignissimos ad, ipsa sequi? Omnis et id ratione accusantium, amet ipsa nobis praesentium ex a itaque esse vel labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione similique mollitia hic, dolorum ut quis iusto. Eaque repudiandae accusamus error maxime ipsa tenetur quas, dolorum eveniet, iure dolores eius quod.
-					</p>
-				</article>
+					<h2>Connexion</h2>
+					<form action='treatment-mail.html' method='post'>
+						<label for='email'>Votre adresse mail<br>
+							<input id='email' type='email' name='email' placeholder='adresse@mail.com' pattern="[a-z]{1}[a-z0-9\-_\.]{5,50}@[a-z]{1}[a-z0-9\-_\.]{5,50}\.[a-z]{2,4}" required>
+						</label>
+						<label for='password'>Entrez votre mot de passe<br>
+							<input id='password' type='password' name='password' placeholder='Mots de passe' required>
+						</label>
+						<button type='submit'>Se connecter</button>					
+					</form>
+					<p class='center'><a href=''>Mots de passe perdu</a></p>
 			</section>
 		</main>
-		<footer style='clear: both;'>Design by Hakim AZIZI</footer>
+		<footer><a href='https://web-developer-nantes.com'>Design by web developer Hakim AZIZI</a></footer>
 <script src='src/script/menu-script.js'></script>
 	</body>
 </html>
