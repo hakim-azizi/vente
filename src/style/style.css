@@ -1,7 +1,12 @@
 :root{
 	--dark-color: #6F6C6D;
-	--light-color: #FFF;
-	--medium-color: #C8C8C8; 
+	--light-color: #EDEDED;
+	--medium-color: #d45f82; 
+}
+
+a{
+	text-decoration: none ;
+	color: var(--medium-color)
 }
 
 .red-color{
@@ -9,6 +14,7 @@
 }
 
 body{
+	background: var(--light-color);
 	display:flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -21,6 +27,7 @@ body{
 	padding:0;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	scrollbar-width: thin;
+	color: var(--dark-color);
 }
 
 .navbar {
@@ -96,15 +103,13 @@ font-size: .7rem;
 }
 
 .menu{
-	position:fixed;
+	position:absolute;
 	top: 2.5rem;
-	background: var(--medium-color);
+	background: #bebebe;
 	width: 15.625rem;
 	border-radius: 0 0 .5rem 0;
 	padding-top: .5rem;
-	overflow-y: scroll;
-	max-height: calc(100vh - 5.5rem);
-	}
+}
 
 .menu>ul>li{
 	margin-bottom: 1rem;
